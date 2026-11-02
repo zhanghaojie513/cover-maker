@@ -1,0 +1,12 @@
+# 你的图像服务配置（含 key，绝不入库）
+my-images.json
+
+# 出稿日志（本机防重复记忆）
+.cover/
+
+# 生成物
+*-cover.png
+surgery*.png
+*-source.html
+bg*.jpg
+_edge_*/
