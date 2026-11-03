@@ -23,11 +23,29 @@
 
 ## Install
 
+Built and tuned for Claude Code, Codex, Cursor and 70+ more skills-compatible agents. The simplest way is to hand your agent the link:
+
+```
+Install this skill for me: https://github.com/zhanghaojie513/cover-maker
+```
+
+Or with the [skills](https://github.com/vercel-labs/skills) CLI (auto-detects the agents on your machine and installs into each one's skills directory):
+
 ```bash
 npx skills add zhanghaojie513/cover-maker
 ```
 
-自动探测你机器上的 agent（Claude Code、Cursor、Codex 等 70+）装进各自 skills 目录；也可手动 clone 到任意 skills 目录。
+Or by hand:
+
+```bash
+git clone https://github.com/zhanghaojie513/cover-maker.git
+cd cover-maker
+ln -s "$(pwd)" ~/.claude/skills/cover-maker   # Claude Code
+ln -s "$(pwd)" ~/.codex/skills/cover-maker    # Codex
+ln -s "$(pwd)" ~/.agents/skills/cover-maker   # generic skills directory
+```
+
+In mainland China, if GitHub is slow, prefix the clone URL with a proxy such as [gh-proxy](https://gh-proxy.com/) (e.g. `git clone https://gh-proxy.com/https://github.com/zhanghaojie513/cover-maker.git`).
 
 ## Configure your image backend
 
